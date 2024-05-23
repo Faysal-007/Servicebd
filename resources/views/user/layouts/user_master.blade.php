@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{asset('user/assets/vendor/select2/select2.min.css')}}">
     <link rel="stylesheet" href="{{asset('user/assets/vendor/owlcarousel/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset('user/assets/vendor/lightcase/lightcase.css')}}">
+    <link rel="stylesheet" href="{{asset('user/assets/vendor/lightcase/lightcase')}}">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">

@@ -8,11 +8,11 @@ Login
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
           <div class="card-header text-center">
-            <a href="../../index2.html" class="h1"><b>Admin</b>LTE</a>
+            <a href="" class="h2">Service Bangladesh</a>
           </div>
           <div class="card-body">
             <p class="login-box-msg">Sign in to start your session</p>
-      
+
             <form action="{{url('login')}}" method="post">
                 @csrf
               <div class="input-group mb-3">
@@ -48,7 +48,7 @@ Login
                 <!-- /.col -->
               </div>
             </form>
-      
+
             <div class="social-auth-links text-center mt-2 mb-3">
               <a href="#" class="btn btn-block btn-primary">
                 <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
@@ -58,7 +58,7 @@ Login
               </a>
             </div>
             <!-- /.social-auth-links -->
-      
+
             <p class="mb-1">
               <a href="{{ route('password.request') }}">I forgot my password</a>
             </p>
