@@ -7,7 +7,7 @@ Register
     <div class="register-box">
         <div class="card card-outline card-primary">
           <div class="card-header text-center">
-            <a href="{{route('home')}}">Service Bangladesh</a>
+            <a href="{{route('public_home')}}">Service Bangladesh</a>
           </div>
           <div class="card-body">
             <p class="login-box-msg">Register a new membership</p>
