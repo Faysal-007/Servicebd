@@ -31,9 +31,7 @@ Service BD
 @include('user.home.latest_news')
 @endsection
 
-@section('portfolio')
-@include('user.home.portfolio')
-@endsection
+
 
 @section('pricing')
 @include('user.home.pricing')

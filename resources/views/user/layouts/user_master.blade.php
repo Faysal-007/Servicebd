@@ -53,7 +53,7 @@
 <!-- End of Blog Section -->
 
 <!-- Portfolio Section -->
-@yield('portfolio')
+
 <!-- End of Portfolio Section -->
 
 @yield('pricing')
