@@ -13,15 +13,17 @@
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="{{asset('admin/assets/plugins/tempusdominus-bootstrap-4/css/tempusd.css')}}">
   <link rel="stylesheet" href="{{asset('admin/assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
   <link rel="stylesheet" href="{{asset('admin/assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
   <link rel="stylesheet" href="{{asset('admin/assets/plugins/jqvmap/jqvmap.min.css')}}">
+  <link rel="stylesheet" href="{{asset('admin/assets/dist/css/custom.admin.css')}}">
   <link rel="stylesheet" href="{{asset('admin/assets/dist/css/adminlte.min.css')}}">
   <link rel="stylesheet" href="{{asset('admin/assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
   <link rel="stylesheet" href="{{asset('admin/assets/plugins/daterangepicker/daterangepicker.css')}}">
 
   <link rel="stylesheet" href="{{asset('admin/assets/plugins/summernote/summernote-bs4.min.css')}}">
- 
+
   <style>
     .custom_padding{padding: 0px};
   </style>
@@ -35,7 +37,7 @@
     <img class="animation__shake" src="{{asset('admin/assets/dist/img/AdminLTELogo.png')}}" alt="AdminLTELogo" height="60" width="60">
   </div> --}}
 
-  
+
     <!-- Navbar -->
   @include('admin.layouts.admin_navbar')
 
@@ -45,7 +47,7 @@
   <!-- Content Wrapper. Contains page content -->
   @yield('content')
 
-  
+
   <footer class="main-footer">
     <strong>Copyright &copy; 2014-2021 <a href="">Abdullah Al Faysal</a>.</strong>
     All rights reserved.
