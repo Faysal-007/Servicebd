@@ -1,4 +1,5 @@
 @extends('user.layouts.user_master')
+
 @section('title')
 Service BD
 @endsection

@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--
-	Moon by GetTemplates.co
-	URL: https://gettemplates.co
--->
 <html lang="en">
 
 <head>
@@ -32,8 +28,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
 </head>
-<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
+<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout bg-white">
 	<div class="boxed-page">
+
 <nav id="gtco-header-navbar" class="navbar navbar-expand-lg py-4">
     @yield('nav')
 </nav>
