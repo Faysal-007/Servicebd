@@ -64,8 +64,6 @@
 @yield('footer')
 
 </div>
-
-</div>
 	<!-- External JS -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 	<script src="{{asset('user/assets/vendor/bootstrap/popper.min.js')}}"></script>
