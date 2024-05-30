@@ -65,6 +65,14 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="{{route('list_nav_menu')}}" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                           Navigation Menu
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="{{route('list_blog')}}" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>

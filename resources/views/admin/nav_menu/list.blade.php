@@ -1,6 +1,6 @@
 @extends('admin.layouts.admin_master')
 @section('title')
-Subject List 
+Navigation Menu
 @endsection
 @section('content')
 <div class="content-wrapper">
@@ -17,7 +17,7 @@ Subject List
                 @endif
               <div class="card-header">
                 <div class="search_area">
-                  <form action="{{ url('admin/subject/list') }}" method="get">
+                  <form action="{{ url('admin/nav_menu/list') }}" method="get">
                       <div class="row">
                           <div class="col-md-3 form-group">
                               <input type="search" name="name" class="form-control" placeholder="search by subject name" value="{{ Request::get('name') }}"
@@ -36,7 +36,7 @@ Subject List
                   </form>
                 </div>
               </div>
-              
+
               <div class="card-body">
                 <table class="table table-striped">
                   <thead>

@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\MenuController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogcategoryController;
 use Illuminate\Support\Facades\Route;
@@ -37,6 +38,16 @@ Route::middleware(['auth', 'IsAdmin'])->group(function () {
         Route::get('/admin/admin/delete/{id}', 'delete')->name('delete');
         Route::get('/admin/admin/user_profile', 'user_profile')->name('user_profile');
         Route::post('/admin/admin/user_profile/update', 'update_user_profile')->name('update_user_profile');
+    });
+
+
+    Route::controller(MenuController::class)->group(function () {
+        Route::get('/admin/nav_menu/list', 'list_nav_menu')->name('list_nav_menu');
+        Route::get('/admin/nav_menu/add', 'add_nav_menu')->name('add_nav_menu');
+        Route::post('/admin/nav_menu/insert', 'insert_nav_menu')->name('insert_nav_menu');
+        Route::get('/admin/nav_menu/edit/{id}', 'edit_nav_menu')->name('edit_nav_menu');
+        Route::get('/admin/nav_menu/update/{id}', 'update_nav_menu')->name('update_nav_menu');
+        Route::get('/admin/nav_menu/delete/{id}', 'delete_nav_menu')->name('delete_nav_menu');
     });
 
 
