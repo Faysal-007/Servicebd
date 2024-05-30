@@ -4,31 +4,31 @@
 Service BD
 @endsection
 
-@section('nav')
+@section('top_bar')
 @include('user.home.top_bar')
 @endsection
 
-@section('carousel')
+@section('navbar')
 @include('user.home.navbar')
 @endsection
 
-@section('who_we_are')
+@section('search')
 @include('user.home.search')
 @endsection
 
-@section('counter')
+@section('facts')
 @include('user.home.facts')
 @endsection
 
-@section('feature')
+@section('about')
 @include('user.home.about')
 @endsection
 
-@section('social')
+@section('features')
 @include('user.home.features')
 @endsection
 
-@section('latest_news')
+@section('services')
 @include('user.home.services')
 @endsection
 
