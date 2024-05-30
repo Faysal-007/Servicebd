@@ -1,7 +1,7 @@
 <div class="container-fluid position-relative p-0">
     <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Startup</h1>
+        <a href="{{route('public_home')}}" class="navbar-brand p-0">
+            <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Service Bangladesh</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>
@@ -33,7 +33,7 @@
             <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
             @if(Route::has('login'))
             @auth
-            <a href="" class="btn btn-primary py-2 px-4 ms-3">Dashboard</a>
+            <a href="{{route('admin_dashboard')}}" class="btn btn-primary py-2 px-4 ms-3">Dashboard</a>
             <div class="nav-item dropdown">
                 <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> {{ Auth::user()->name }}
                     <i class="fa fa-arrow-down me-3"></i>
