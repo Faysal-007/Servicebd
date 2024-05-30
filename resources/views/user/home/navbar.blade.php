@@ -35,7 +35,7 @@
             @auth
             <a href="{{route('admin_dashboard')}}" class="btn btn-primary py-2 px-4 ms-3">Dashboard</a>
             <div class="nav-item dropdown">
-                <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> {{ Auth::user()->name }}
+                <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> {{ Auth::user()->last_name }}
                     <i class="fa fa-arrow-down me-3"></i>
                 </a>
                 <div class="dropdown-menu fade-down m-0">
