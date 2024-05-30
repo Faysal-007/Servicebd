@@ -26,11 +26,11 @@ Navigation Menu
                           <div class="col-md-3 form-group">
                               <div>
                                   <button class="btn btn-primary" type="submit">Search</button>
-                                  <a href="{{ url('admin/subject/list') }}" class="btn btn-primary">Reset</a>
+                                  <a href="{{ url('admin/nav_menu/list') }}" class="btn btn-primary">Reset</a>
                               </div>
                           </div>
                           <div class="col-md-3" style="position: absolute;right: 0">
-                            <a class="btn btn-primary" style="float:right" href="{{url('/admin/subject/add')}}">Add Subject</a>
+                            <a class="btn btn-primary" style="float:right" href="{{url('/admin/nav_menu/add')}}">Add Menu</a>
                           </div>
                       </div>
                   </form>

@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('link')->nullable();
             $table->string('is_delete');
+            $table->string('Created_By');
+            $table->string('slug');
             $table->timestamps();
         });
     }
