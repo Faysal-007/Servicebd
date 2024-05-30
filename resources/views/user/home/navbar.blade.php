@@ -31,7 +31,26 @@
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
             <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
-            <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">Download Pro Version</a>
+            @if(Route::has('login'))
+            @auth
+            <a href="" class="btn btn-primary py-2 px-4 ms-3">Dashboard</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> {{ Auth::user()->name }}
+                    <i class="fa fa-arrow-down me-3"></i>
+                </a>
+                <div class="dropdown-menu fade-down m-0">
+                    <a href="{{route('user_profile')}}" class="dropdown-item">Profile</a>
+                    <form id="logout" method="post" action="{{ route('logout') }}">
+                        @csrf
+                        <a class="dropdown-item" href="javascript:{}" onclick="document.getElementById('logout').submit();">logout</a>
+                    </form>
+                </div>
+            </div>
+            @else
+            <a href="{{route('login')}}" class="btn btn-primary py-2 px-4 ms-3">Login</a>
+            <a href="{{route('register')}}" class="btn btn-primary py-2 px-4 ms-3">Register</a>
+            @endauth
+            @endif
         </div>
     </nav>
 

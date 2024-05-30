@@ -40,7 +40,7 @@
 
 
     <!-- Topbar Start -->
-    @yield('top_bar')
+    @yield('topbar')
     <!-- Topbar End -->
 
 

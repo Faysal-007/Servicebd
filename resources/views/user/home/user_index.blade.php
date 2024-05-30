@@ -4,8 +4,8 @@
 Service BD
 @endsection
 
-@section('top_bar')
-@include('user.home.top_bar')
+@section('topbar')
+@include('user.home.topbar')
 @endsection
 
 @section('navbar')
