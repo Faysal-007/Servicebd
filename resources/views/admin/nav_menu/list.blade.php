@@ -63,8 +63,8 @@ Navigation Menu
                       </td>
                       <td>{{$value->created_by}}</td>
                       <td>{{$value->created_at}}</td>
-                      <td><a class="btn btn-primary" href="{{url('/admin/subject/edit',$value->id)}}">Edit</a></td>
-                      <td><a class="btn btn-danger" href="{{url('/admin/subject/delete',$value->id)}}" onclick="return confirm('Are you sure?')">Delete</a></td>
+                      <td><a class="btn btn-primary" href="{{route('edit_nav_menu',$value->id)}}">Edit</a></td>
+                      <td><a class="btn btn-danger" href="{{route('delete_nav_menu',$value->id)}}" onclick="return confirm('Are you sure?')">Delete</a></td>
                     </tr>
                     @endforeach
                   </tbody>

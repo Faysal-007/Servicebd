@@ -28,11 +28,25 @@ class MenuController extends Controller
         $user->save();
         return redirect('admin/nav_menu/list')->with('message','Added Successfully!');
     }
-    public function delete_blog_category($id){
-        $data = MenuModel::find($id);
-        $data->is_delete=(1);
-        $data->update();
-        return redirect('admin/nav_menu/list')->with('message','Deleted Successfully!');
+    public function edit_nav_menu($id){
+        $MenuData= MenuModel::find($id);
+        return view('admin.nav_menu.edit',compact('MenuData'));
+    }
+    public function update_nav_menu(Request $request,$id){
+        $user= MenuModel::find($id);
+        $user->name = trim($request->name);
+        $user->slug = trim(str::slug($request->name));
+        $user->link = trim($request->link);
+        $user->is_delete= trim($request->status);
+        $user->created_by = Auth::user()->id;
+        $user->save();
+        return redirect('admin/nav_menu/list')->with('message','Updated Successfully!');
+    }
 
+    public function delete_nav_menu($id){
+        $user = MenuModel::find($id);
+        $user->is_delete=(1);
+        $user->update();
+        return redirect('admin/nav_menu/list')->with('message','Deleted Successfully!');
     }
 }

@@ -2,16 +2,19 @@
 
 namespace App\Http\Controllers;
 use App\Models\BlogModel;
+use App\Models\MenuModel;
 
 use Illuminate\Http\Request;
 
 class PublicController extends Controller
 {
     public function public_index(){
-        return view('user.home.user_index');
+        $menu_items = MenuModel::select()->where('is_delete','=','0')->get();
+        return view('user.home.user_index',compact('menu_items'));
     }
     public function public_home(){
-        return view('user.home.user_index');
+        $menu_items = MenuModel::select()->where('is_delete','=','0')->get();
+        return view('user.home.user_index',compact('menu_items'));
     }
     public function public_dashboard(){
         return view('user.home.user_index');

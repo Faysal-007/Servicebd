@@ -8,10 +8,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <div class="nav-item dropdown">
+                @foreach($menu_items as $nav_items)
+                <a href="{{$nav_items->link}}" class="nav-item nav-link">{{$nav_items->name}}</a>
+                {{-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
                     <div class="dropdown-menu m-0">
                         <a href="blog.html" class="dropdown-item">Blog Grid</a>
@@ -27,15 +26,15 @@
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                         <a href="quote.html" class="dropdown-item">Free Quote</a>
                     </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div> --}}
+                @endforeach
             </div>
             <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
             @if(Route::has('login'))
             @auth
             <a href="{{route('admin_dashboard')}}" class="btn btn-primary py-2 px-4 ms-3">Dashboard</a>
             <div class="nav-item dropdown">
-                <a href="#" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"> {{ Auth::user()->last_name }}
+                <a href="#" class="btn btn-primary px-lg-5 d-none d-lg-block"> {{ Auth::user()->last_name }}
                     <i class="fa fa-arrow-down me-3"></i>
                 </a>
                 <div class="dropdown-menu fade-down m-0">
